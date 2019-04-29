@@ -21,7 +21,18 @@
       "styles": [
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "./assets/js/sticky.js",
+        "./assets/js/hoverIntent.js",
+        "../node_modules/superfish/dist/js/superfish.js",
+        "./assets/js/jquery.flexslider-min.js",
+        "./assets/js/bootstrap-datepicker.min.js",
+        "./assets/js/classie.js",
+        "./assets/js/selectFx.js",
+        "./assets/js/main.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

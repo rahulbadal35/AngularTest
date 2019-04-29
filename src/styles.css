@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/css/animate.css";
+@import "assets/css/icomoon.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../node_modules/superfish/dist/css/superfish.css";
+@import "assets/css/flexslider.css";
+@import "assets/css/magnific-popup.css";
+@import "assets/css/bootstrap-datepicker.min.css";
+@import "assets/css/cs-select.css";
+@import "assets/css/cs-skin-border.css";
+@import "assets/css/style.css"; 

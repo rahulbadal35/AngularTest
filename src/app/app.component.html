@@ -1,20 +1,98 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- header -->
+<header id="fh5co-header-section" class="sticky-banner">
+  <div class="container">
+    <div class="nav-header">
+      <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+      <h1 id="fh5co-logo"><a  routerLink="/home"><i class="icon-home"></i>Home<span>state</span></a></h1>
+      <!-- START #fh5co-menu-wrap -->
+      <nav id="fh5co-menu-wrap" role="navigation">
+        <ul class="sf-menu" id="fh5co-primary-menu">
+          <li><a  rel="noopener" routerLink="home">Home</a> </li>
+          <li>
+            <a  rel="noopener" routerLink="/properties">properties</a>
+            <ul class="fh5co-sub-menu">
+              <li><a  rel="noopener" routerLink="/properties">family</a> </li>
+              <li><a  rel="noopener" routerLink="/properties">CSS3 @ HTML5</a> </li>
+              <li><a  rel="noopener" routerLink="/properties">Angular js</a> </li>
+              <li><a  rel="noopener" routerLink="/properties">node js</a> </li>
+              <li><a  rel="noopener" routerLink="/properties">Django& python</a> </li>
+            </ul>
+          </li>
+          <li><a  rel="noopener" routerLink="/Agent">Agent</a> </li>
+          <li><a  rel="noopener" routerLink="/blog">Blog</a> </li>
+          <li><a  rel="noopener" routerLink="/Contact">contact</a> </li>
+          <li><a  rel="noopener" routerLink="/login">login</a> </li>
+          <li><a  rel="noopener" routerLink="/dashboard">dashboard</a> </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
 
+
+
+<router-outlet></router-outlet>
+
+<!-- footer -->
+
+<footer>
+  <div id="footer">
+    <div class="container">
+      <div class="row row-bottom-padded-md">
+        <div class="col-md-3">
+          <h3 class="section-title">About Homestate</h3>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+        </div>
+        
+        <div class="col-md-3 col-md-push-1">
+          <h3 class="section-title">Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Agent</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">FAQ / Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h3 class="section-title">Information</h3>
+          <ul>
+            <li><a href="#">Terms &amp; Condition</a></li>
+            <li><a href="#">License</a></li>
+            <li><a href="#">Privacy &amp; Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3 class="section-title">Newsletter</h3>
+          <p>Subscribe for our newsletter</p>
+          <form class="form-inline" id="fh5co-header-subscribe">
+            <div class="row">
+              <div class="col-md-12 col-md-offset-0">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="email" placeholder="Enter your email">
+                  <button type="submit" class="btn btn-default"><i class="icon-paper-plane"></i></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="fh5co-social-icons">
+            <a href="#"><i class="icon-twitter2"></i></a>
+            <a href="#"><i class="icon-facebook2"></i></a>
+            <a href="#"><i class="icon-instagram"></i></a>
+            <a href="#"><i class="icon-dribbble2"></i></a>
+            <a href="#"><i class="icon-youtube"></i></a>
+          </p>
+          <p>Copyright 2016 Free Html5 <a href="#">Module</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a> &amp; <a href="http://blog.gessato.com/" target="_blank">Gessato</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

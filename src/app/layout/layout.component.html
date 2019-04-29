@@ -1,0 +1,160 @@
+
+      
+      
+      <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+      <div class="row">
+        <div class="col-xxs-12 col-xs-12">
+          <div class="input-field">
+            <label for="from">Keyword:</label>
+            <input type="text" name="key" [(ngModel)]="key" class="form-control" id="keyword" placeholder="Any"/>
+          </div>
+        </div>
+        <div class="col-xxs-12 col-xs-12">
+            <section>
+                <label for="class">Property Status:</label>
+                <select class="cs-select cs-skin-border" id="propertyStatus" name="propertyStatus" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+                  <option *ngFor= "let option of options">
+                {{option.name}}
+                </option>
+                  
+                </select>
+               
+              </section>
+
+
+        </div>
+        <div class="col-xxs-12 col-xs-12">
+        
+
+          <section>
+            <label for="class">Property Type:</label>
+            <select class="cs-select cs-skin-border" id="propertyType" name="propertyType" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+              <option *ngFor= "let option of options">
+            {{option.name}}
+            </option>
+              
+            </select>
+           
+          </section>
+
+
+
+        </div>
+        <div class="col-xxs-12 col-xs-12">
+          <div class="input-field">
+            <label for="from">Location:</label>
+            <input type="text" name="location" [(ngModel)]="location" class="form-control" id="from-place" placeholder="Any"/>
+          </div>
+        </div>
+
+
+
+        <div class="col-xxs-12 col-xs-12">
+           <section>
+            <label for="class">Price:</label>
+            <div class="wide"> 
+                <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyPrice" name="propertyPrice" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+                  <option *ngFor= "let option of options">
+                {{option.name}}
+                </option>
+                </select>    
+                <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyPrice2" name="propertyPrice2" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+                  <option *ngFor= "let option of options">
+                {{option.name}}
+                </option>  
+              </select>
+              </div>
+              </section>
+        </div>
+
+
+
+
+        <div class="col-xxs-12 col-xs-12">
+          <section>
+            <label for="class">Bedrooms:</label>
+           <div class="wide"> 
+               <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyBedroom" name="propertyBedroom" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+                 <option *ngFor= "let option of options">
+               {{option.name}}
+               </option>
+               </select>    
+               <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyBedroom2" name="propertyBedroom2" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+                 <option *ngFor= "let option of options">
+               {{option.name}}
+               </option>  
+             </select>
+             </div>
+             </section>
+       </div>
+
+
+       <div class="col-xxs-12 col-xs-12">
+        <section>
+          <label for="class">Bathrooms:</label>
+         <div class="wide"> 
+             <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyBathroom" name="propertyBathroom" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+               <option *ngFor= "let option of options">
+             {{option.name}}
+             </option>
+             </select>    
+             <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyBathroom2" name="propertyBathroom2" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+               <option *ngFor= "let option of options">
+             {{option.name}}
+             </option>  
+           </select>
+           </div>
+           </section>
+     </div>
+
+
+
+     <div class="col-xxs-12 col-xs-12">
+      <section>
+        <label for="class">Area:</label>
+       <div class="wide"> 
+           <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyArea" name="propertyArea" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+             <option *ngFor= "let option of options">
+           {{option.name}}
+           </option>
+           </select>    
+           <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyArea2" name="propertyArea2" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+             <option *ngFor= "let option of options">
+           {{option.name}}
+           </option>  
+         </select>
+         </div>
+         </section>
+   </div>
+
+
+
+
+   <div class="col-xxs-12 col-xs-12">
+    <section>
+      <label for="class">Parking spots:</label>
+     <div class="wide"> 
+         <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyPark" name="propertyPark" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+           <option *ngFor= "let option of options">
+         {{option.name}}
+         </option>
+         </select>    
+         <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyPark2" name="propertyPark2" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+           <option *ngFor= "let option of options">
+         {{option.name}}
+         </option>  
+       </select>
+       </div>
+       </section>
+ </div>
+
+
+
+        <div class="panel-footer">
+          <button type="submit" (click) = "print()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+      
+    </form>
+
+    
